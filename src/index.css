@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fbfbe2;
+  --color-surface-dim: #dbdcc3;
+  --color-on-surface: #1b1d0e;
+  --color-on-surface-variant: #4b454b;
+  --color-primary: #6c586d;
+  --color-primary-container: #d8bfd8;
+  --color-secondary: #7b5455;
+  --color-secondary-container: #fecbcb;
+  --color-tertiary: #74593f;
+  --color-tertiary-container: #e3c0a0;
+  --color-outline: #7d757b;
+  --color-outline-variant: #cec4cb;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans selection:bg-primary-container selection:text-primary;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-white/60 backdrop-blur-xl border border-white/20 shadow-xl;
+  }
+
+  .sunset-soft-gradient {
+    background: linear-gradient(135deg, #f5daf4 0%, #fecbcb 50%, #ffdcbe 100%);
+  }
+
+  .dreamy-shadow {
+    box-shadow: 0 30px 60px rgba(108, 88, 109, 0.08);
+  }
+}
