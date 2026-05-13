@@ -42,14 +42,14 @@ const videos = [
   },
   {
     id: 7,
-    title: "Street Fashion",
-    category: "Fashion & Lifestyle",
+    title: "Fashion glasses Campaign",
+    category: "Glasses & Accessories",
     video: "src/public/video/Video11.mp4",
   },
   {
     id: 8,
-    title: "Editorial Shoot",
-    category: "Fashion & Beauty",
+    title: "Haircare Campaign",
+    category: "Hair maintenance oils",
     video: "src/public/video/Video12.mp4",
   }
 ];
@@ -63,31 +63,25 @@ const images = [
   },
   {
     id: 2,
-    title: "Lifestyle Content",
+    title: "Skin care",
     image:
       "src/public/image/image3.jpeg",
   },
   {
     id: 3,
-    title: "Beauty Campaign",
+    title: "Risk watch campaign",
     image:
       "src/public/image/image4.jpeg",
   },
   {
     id: 4,
-    title: "Street Fashion",
+    title: "Beauty Editorial",
     image:
       "src/public/image/image5.jpeg",
   },
   {
     id: 5,
-    title: "Editorial Shoot",
-    image:
-      "src/public/image/image6.jpeg",
-  },
-  {
-    id: 6,
-    title: "Luxury Campaign",
+    title: "Brand Shoot",
     image:
       "src/public/image/nimbi.jpeg",
   },
@@ -118,28 +112,33 @@ export default function Portfolio() {
     >
       <div className="max-w-7xl mx-auto">
         {/* HEADER */}
-        <div className="text-center mb-24">
-          <p className="uppercase tracking-[0.3em] text-sm text-slate-400 mb-4">
-            Selected Works
-          </p>
+         <div className="text-center mb-24">
+            <p className="uppercase tracking-[0.3em] text-sm text-slate-400 mb-4">
+              Brand Collaborations & Featured Campaigns
+            </p>
 
-          <h2 className="text-5xl md:text-7xl font-black text-slate-900">
-            Portfolio
-          </h2>
-        </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
+              Creating Engaging Content for Modern Brands
+            </h2>
 
-        {/* VIDEO SECTION */}
-        <div className="mb-36">
-
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-14">
-            <h3 className="text-3xl md:text-4xl font-bold text-slate-900">
-              Video Content
-            </h3>
-
-            <p className="text-slate-500 text-sm uppercase tracking-[0.2em]">
-              Reels • Campaigns • UGC
+            <p className="max-w-2xl mx-auto text-slate-600 leading-relaxed">
+              A collection of short-form videos, UGC campaigns, and creative brand
+              collaborations designed to connect with audiences, increase engagement,
+              and showcase products in authentic ways.
             </p>
           </div>
+
+          {/* VIDEO SECTION */}
+          <div className="mb-20">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-14">
+              {/* <h3 className="text-3xl md:text-4xl font-bold text-slate-900">
+                Video Content for Partnered Brands
+              </h3> */}
+
+              <p className="text-slate-500 text-sm uppercase tracking-[0.2em]">
+                UGC • Reels • Product Campaigns • Lifestyle Content
+              </p>
+            </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-4 gap-10 place-items-center">
 
@@ -192,17 +191,12 @@ export default function Portfolio() {
 
         {/* PHOTO SECTION */}
         <div>
-
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-14">
-            <h3 className="text-3xl md:text-4xl font-bold text-slate-900">
-              Photo Portfolio
-            </h3>
 
             <p className="text-slate-500 text-sm uppercase tracking-[0.2em]">
-              Fashion • Beauty • Lifestyle
+              Brand Shoots • Product Features • Lifestyle • Fashion
             </p>
           </div>
-
           {/* MASONRY */}
           <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
 
