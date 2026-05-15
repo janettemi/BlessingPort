@@ -1,4 +1,5 @@
 import { motion } from 'motion/react';
+
 const brands = ['Paula’s choice', 'Nimbi', 'Eli&Sar', 'Kloudy', 'Cupp', 'Elf', 'Forest & shore', 'Firmoo', 'Zooki'];
 
 export default function Logos() {

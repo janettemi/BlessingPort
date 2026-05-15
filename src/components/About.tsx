@@ -17,13 +17,14 @@ export default function About() {
             </h2>
             <div className="flex flex-wrap gap-4 mb-8">
               <span className="px-6 py-2 rounded-full bg-secondary-container text-secondary text-sm font-medium tracking-wide">
-                Visual Storytelling
+                Visual storytelling
               </span>
               <span className="px-6 py-2 rounded-full bg-tertiary-container text-tertiary text-sm font-medium tracking-wide">
                 Creative Direction
               </span>
             </div>
           </motion.div>
+          
           
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
@@ -33,10 +34,18 @@ export default function About() {
             className="md:col-span-6 md:col-start-7"
           >
             <p className="text-lg text-on-surface-variant mb-6 leading-relaxed">
-              Blessing Udoka Nnona is a multi-disciplinary digital creator whose work sits at the intersection of high fashion and intimate human experience. With a keen eye for aesthetic precision, she transforms everyday moments into cinematic experiences.
+              Blessing Udoka Nnona is a multi-disciplinary digital creator whose work sits at the 
+              intersection of high fashion and intimate human experience. 
+              With a keen eye for aesthetic precision,
+              she transforms everyday moments into cinematic experiences.
             </p>
             <p className="text-lg text-on-surface-variant mb-10 leading-relaxed">
-              Her philosophy centers on 'Visual Poetry'—the belief that every reel, photograph, and digital campaign should tell a story that feels both aspirational and deeply personal.
+                I’m a beauty, travel, and lifestyle content creator passionate 
+                about creating visually engaging and relatable content that inspires confidence, 
+                creativity, and everyday luxury. From curated beauty finds to travel experiences 
+                and lifestyle moments, I love bringing brands to life through authentic storytelling 
+                and aesthetic-driven content
+                 that connects with modern audiences.
             </p>
             
             <motion.a 

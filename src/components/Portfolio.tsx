@@ -34,11 +34,11 @@ const videos = [
     category: "Beauty",
     video: "src/public/video/video9.mp4",
   },
-  {
+   {
     id: 6,
-    title: "Creative Direction",
-    category: "Creative Direction",
-    video: "src/public/video/video10.mp4",
+    title: "Brand Shoot",
+    category: "Beauty & Lifestyle",
+    video: "src/public/video/Video.mp4",
   },
   {
     id: 7,
@@ -51,9 +51,20 @@ const videos = [
     title: "Haircare Campaign",
     category: "Hair maintenance oils",
     video: "src/public/video/Video12.mp4",
-  }
+  },
+   {
+    id: 9,
+    title: "Brand Shoot",
+    category: "Beauty & Lifestyle",
+    video: "src/public/video/video14.mp4",
+  },
+  {
+    id: 10,
+    title: "Creative Direction",
+    category: "Creative Direction",
+    video: "src/public/video/video10.mp4",
+  },
 ];
-
 const images = [
   {
     id: 1,
@@ -140,7 +151,7 @@ export default function Portfolio() {
               </p>
             </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 xl:grid-cols-4 gap-10 place-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 gap-10 place-items-center">
 
             {videos.map((item) => (
               <div
@@ -198,12 +209,12 @@ export default function Portfolio() {
             </p>
           </div>
           {/* MASONRY */}
-          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+          <div className="columns-1 sm:columns-2 xl:columns-3 gap-6 space-y-6">
 
             {images.map((item) => (
               <div
                 key={item.id}
-                className="relative overflow-hidden rounded-[32px] group break-inside-avoid"
+                className="relative overflow-hidden rounded-[28px] group break-inside-avoid"
               >
 
                 <img
@@ -230,7 +241,7 @@ export default function Portfolio() {
       {/* VIDEO MODAL */}
       {activeVideo && (
         <div
-          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/95 backdrop-blur-sm p-4 md:p-10"
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm p-4 md:p-10"
           onClick={() => setActiveVideo(null)}
         >
 

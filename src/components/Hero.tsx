@@ -46,7 +46,7 @@ export default function Hero() {
             className="text-lg text-slate-500 leading-relaxed max-w-md mb-10"
           >
             Digital Architect crafting immersive visual experiences
-            through code and cinematography.
+            through cinematography.
           </motion.p>
 
           {/* SOCIALS */}

@@ -13,7 +13,7 @@ export default function App() {
       <Hero />
       <About />
       <Portfolio />
-       <Logos />
+      <Logos />
       <Contact />
       <Footer />
       <BottomNav />
