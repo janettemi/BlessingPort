@@ -12,8 +12,8 @@ export default function App() {
     <div className="min-h-screen selection:bg-primary-container selection:text-primary overflow-x-hidden">
       <Hero />
       <About />
+       <Logos />
       <Portfolio />
-      <Logos />
       <Contact />
       <Footer />
       <BottomNav />
