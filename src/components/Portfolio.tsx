@@ -96,7 +96,6 @@ export default function Portfolio() {
                   className="relative w-full h-full cursor-pointer group"
                 >
                   <video
-                  
                     src={item.video}
                     muted
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-700"

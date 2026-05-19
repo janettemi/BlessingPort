@@ -1,15 +1,15 @@
 import { motion } from "motion/react";
 
 const brands = [
-  "src/public/image/paul's chouce.png",
-  "src/public/image/nimbi.png",
-  "src/public/image/Zooki.jpg",
-  "src/public/image/cupp.jpg",
-  "src/public/image/Eli&Sarlondon.png",
-  "src/public/image/kloudy.png",
-  "src/public/image/elf.png",
-  "src/public/image/firmoo.png",
-  "src/public/image/fs.jpg"
+  "/image/paul's chouce.png",
+  "/image/nimbi.png",
+  "/image/Zooki.jpg",
+  "/image/cupp.jpg",
+  "/image/Eli&Sarlondon.png",
+  "/image/kloudy.png",
+  "/image/elf.png",
+  "/image/firmoo.png",
+  "/image/fs.jpg"
 ];
 
 export default function Logos() {
