@@ -5,36 +5,36 @@ import { useEffect, useState } from "react";
 
 // Categorized video data
 const videos = [
-  { id: 1, title: "Skincare Campaign", category: "OOTD & Beauty", video: "src/public/video/video1.webm" },
-  { id: 2, title: "Skincare Reel", category: "Beauty", video: "src/public/video/video2.webm" },
-  { id: 3, title: "Watch Campaign", category: "Watches & Accessories", video: "src/public/video/video3.webm" },
-  { id: 4, title: "Drink Camaign", category: "Drink", video: "src/public/video/video4.webm" },
-  { id: 5, title: "Beauty Reel", category: "Beauty", video: "src/public/video/video9.webm" },
-  { id: 6, title: "Beauty ", category: "Beauty & Lifestyle", video: "src/public/video/Video.webm" },
-  { id: 7, title: "Fashion glasses Campaign", category: "Glasses & Accessories", video: "src/public/video/Video11.webm" },
-  { id: 8, title: " Hair maintenance oils", category: "Haircare Campaign", video: "src/public/video/Video12.webm" },
-  { id: 9, title: "Brand Shoot", category: "Beauty & Lifestyle", video: "src/public/video/video14.webm" },
-  { id: 10, title: "Shaving Campaign", category: "Shaving Shot", video: "src/public/video/video10.webm" },
-  { id: 11, title: "Hotel Campaign", category: "Hotel shoot", video: "src/public/video/housev.webm" },
-  { id: 12, title: "Hotel Campaign", category: "House shoots", video: "src/public/video/ShootH.webm" }
+  { id: 1, title: "Skincare Campaign", category: "OOTD & Beauty", video: "/video/video1.webm" },
+  { id: 2, title: "Skincare Reel", category: "Beauty", video: "/video/video2.webm" },
+  { id: 3, title: "Watch Campaign", category: "Watches & Accessories", video: "/video/video3.webm" },
+  { id: 4, title: "Drink Camaign", category: "Drink", video: "/video/video4.webm" },
+  { id: 5, title: "Beauty Reel", category: "Beauty", video: "/video/video9.webm" },
+  { id: 6, title: "Beauty ", category: "Beauty & Lifestyle", video: "/video/Video.webm" },
+  { id: 7, title: "Fashion glasses Campaign", category: "Glasses & Accessories", video: "/video/Video11.webm" },
+  { id: 8, title: " Hair maintenance oils", category: "Haircare Campaign", video: "/video/Video12.webm" },
+  { id: 9, title: "Brand Shoot", category: "Beauty & Lifestyle", video: "/video/video14.webm" },
+  { id: 10, title: "Shaving Campaign", category: "Shaving Shot", video: "/video/video10.webm" },
+  { id: 11, title: "Hotel Campaign", category: "Hotel shoot", video: "/video/housev.webm" },
+  { id: 12, title: "Hotel Campaign", category: "House shoots", video: "/video/ShootH.webm" }
 ];
 
 // Clean photography assets
 const images = [
-  { id: 1, title: "Brand Shoot", image: "src/public/image/image2.jpeg" },
-  { id: 2, title: "Skin care", image: "src/public/image/image3.jpeg" },
-  { id: 3, title: "Risk watch campaign", image: "src/public/image/image4.jpeg" },
-  { id: 4, title: "Beauty Editorial", image: "src/public/image/image5.jpeg" },
-  { id: 5, title: "Brand Shoot", image: "src/public/image/nimbi.jpeg" },
-  { id: 6, title: "Lifestyle Content", image: "src/public/image/BrandShoot.jpeg" },
-  { id: 7, title: "Creative Direction", image: "src/public/image/Beuty.jpeg" }
+  { id: 1, title: "Brand Shoot", image: "/image/image2.jpeg" },
+  { id: 2, title: "Skin care", image: "/image/image3.jpeg" },
+  { id: 3, title: "Risk watch campaign", image: "/image/image4.jpeg" },
+  { id: 4, title: "Beauty Editorial", image: "/image/image5.jpeg" },
+  { id: 5, title: "Brand Shoot", image: "/image/nimbi.jpeg" },
+  { id: 6, title: "Lifestyle Content", image: "/image/BrandShoot.jpeg" },
+  { id: 7, title: "Creative Direction", image: "/image/Beuty.jpeg" }
 ];
 
 // Isolated YouTube Image path
 const standaloneYoutube = {
   id: 8,
   title: "Youtube Content",
-  image: "src/public/image/youtube.jpeg"
+  image: "/image/youtube.jpeg"
 };
 
 export default function Portfolio() {
@@ -96,6 +96,7 @@ export default function Portfolio() {
                   className="relative w-full h-full cursor-pointer group"
                 >
                   <video
+                  
                     src={item.video}
                     muted
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-700"

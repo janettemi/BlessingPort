@@ -113,7 +113,7 @@ export default function Hero() {
             {/* Arch Image Container */}
             <div className="relative z-10 w-full h-full rounded-t-[200px] rounded-b-[40px] overflow-hidden shadow-2xl bg-slate-200 border-4 border-white">
               <img
-                src="src/public/image/MyImage.jpeg"
+                src="/image/MyImage.jpeg"
                 alt="Blessing Udoka Nnona"
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-1000"
               />
