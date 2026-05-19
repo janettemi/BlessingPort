@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="h-[1px] w-full max-w-xl bg-outline-variant/30 my-4" />
       
       <div className="flex flex-col items-center gap-4">
-        <p className="text-sm text-on-surface-variant font-medium">© 2024 Blessing Udoka Nnona</p>
+        <p className="text-sm text-on-surface-variant font-medium">© 2024 Blessing Nnona</p>
         <div className="flex gap-6">
           {[Instagram, Youtube, Twitter].map((Icon, i) => (
             <motion.a 

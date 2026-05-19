@@ -34,7 +34,7 @@ export default function About() {
             className="md:col-span-6 md:col-start-7"
           >
             <p className="text-lg text-on-surface-variant mb-6 leading-relaxed">
-              Blessing Udoka Nnona is a multi-disciplinary digital creator whose work sits at the 
+              Blessing Nnona is a multi-disciplinary digital creator whose work sits at the 
               intersection of high fashion and intimate human experience. 
               With a keen eye for aesthetic precision,
               she transforms everyday moments into cinematic experiences.

@@ -2,10 +2,15 @@
 
 import { motion } from "framer-motion";
 
+const icons = [
+    
+]
+
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-20">
-      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-12 lg:gap-8">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-10">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-10 lg:gap-8">
 
         {/* LEFT CONTENT */}
         <div className="order-2 lg:order-1 col-span-1 lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left z-20">
@@ -22,7 +27,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tight text-slate-900 mb-8"
+            className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-[0.9] tracking-tight text-slate-900 mb-8"
           >
             Blessing <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-500">
@@ -80,24 +85,13 @@ export default function Hero() {
                   </svg>
                 ),
               },
-              {
-                name: "X",
-                href: "https://www.twitter.com/its___blessing",
-                // Dark slate/black active by default, text white
-                baseStyle: "bg-slate-950 text-white border-slate-950 hover:bg-slate-900",
-                svg: (
-                  <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                  </svg>
-                ),
-              },
             ].map((social, i) => (
               <a
                 key={i}
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all duration-300 shadow-sm hover:-translate-y-1 ${social.baseStyle}`}
+                className={`w-11 h-11 rounded-full border flex items-center custor-pointer justify-center transition-all duration-300 shadow-sm hover:-translate-y-1 ${social.baseStyle}`}
               >
                 {social.svg}
               </a>
@@ -106,7 +100,7 @@ export default function Hero() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="order-1 lg:order-2 col-span-1 lg:col-span-5 flex justify-center items-center relative py-4">
+        <div className="order-2 lg:order-1 col-span-1 lg:col-span-5 flex justify-center items-center relative py-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             animate={{ opacity: 1, scale: 1, rotate: -2 }}

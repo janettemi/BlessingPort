@@ -5,18 +5,18 @@ import { useEffect, useState } from "react";
 
 // Categorized video data
 const videos = [
-  { id: 1, title: "Fashion Campaign", category: "OOTD & Beauty", video: "src/public/video/video1.webm" },
+  { id: 1, title: "Skincare Campaign", category: "OOTD & Beauty", video: "src/public/video/video1.webm" },
   { id: 2, title: "Skincare Reel", category: "Beauty", video: "src/public/video/video2.webm" },
   { id: 3, title: "Watch Campaign", category: "Watches & Accessories", video: "src/public/video/video3.webm" },
-  { id: 4, title: "Lifestyle Content", category: "Lifestyle & Travel", video: "src/public/video/video4.webm" },
+  { id: 4, title: "Drink Camaign", category: "Drink", video: "src/public/video/video4.webm" },
   { id: 5, title: "Beauty Reel", category: "Beauty", video: "src/public/video/video9.webm" },
-  { id: 6, title: "Brand Shoot", category: "Beauty & Lifestyle", video: "src/public/video/Video.webm" },
+  { id: 6, title: "Beauty ", category: "Beauty & Lifestyle", video: "src/public/video/Video.webm" },
   { id: 7, title: "Fashion glasses Campaign", category: "Glasses & Accessories", video: "src/public/video/Video11.webm" },
-  { id: 8, title: "Haircare Campaign", category: "Hair maintenance oils", video: "src/public/video/Video12.webm" },
+  { id: 8, title: " Hair maintenance oils", category: "Haircare Campaign", video: "src/public/video/Video12.webm" },
   { id: 9, title: "Brand Shoot", category: "Beauty & Lifestyle", video: "src/public/video/video14.webm" },
-  { id: 10, title: "Creative Direction", category: "Creative Direction", video: "src/public/video/video10.webm" },
-  { id: 11, title: "Hotel Campaign", category: "House & Lifestyle", video: "src/public/video/housev.webm" },
-  { id: 12, title: "Creative Direction", category: "House shoots & Lifestyle", video: "src/public/video/ShootH.webm" }
+  { id: 10, title: "Shaving Campaign", category: "Shaving Shot", video: "src/public/video/video10.webm" },
+  { id: 11, title: "Hotel Campaign", category: "Hotel shoot", video: "src/public/video/housev.webm" },
+  { id: 12, title: "Hotel Campaign", category: "House shoots", video: "src/public/video/ShootH.webm" }
 ];
 
 // Clean photography assets
