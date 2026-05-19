@@ -1,20 +1,51 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Creative Portfolio Website
 
-# Run and deploy your AI Studio app
+A modern and responsive portfolio website designed and developed for a creative professional to showcase visual storytelling, cinematography, and digital content creation.
 
-This contains everything you need to run your app locally.
+##  Features
 
-View your app in AI Studio: https://ai.studio/apps/5d02b5ef-dc76-4ae3-b2d5-ea3ea6aab297
+ Fully responsive design
+ Smooth animations and transitions
+ Modern cinematic-inspired UI
+Social media integration
+ Optimized user experience
+Clean and scalable code structure
 
-## Run Locally
+##  Built With
 
-**Prerequisites:**  Node.js
+ React
+ TypeScript
+ Tailwind CSS
+ Framer Motion
 
+##  Responsive Design
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The website is optimized for:
+Mobile devices
+Tablets
+ Laptops
+ Desktop screens
+
+##  Performance
+
+Fast-loading pages
+ Optimized images
+ Smooth interactions and animations
+
+##  Getting Started
+
+Install dependencies:
+
+```bash id="o2m4m8"
+npm install
+```
+
+Start the development server:
+
+```bash id="x3a9d1"
+npm run dev
+```
+
+##  Project Purpose
+
+This project was developed to help the client establish a strong online presence and professionally showcase their creative work and brand identity.
