@@ -2,9 +2,14 @@
 
 import { motion } from "framer-motion";
 
+const icons = [
+    
+]
+
+
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-10 bg-surface">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-6 py-10">
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 items-center gap-10 lg:gap-8">
 
         {/* LEFT CONTENT */}
@@ -13,45 +18,33 @@ export default function Hero() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="editorial-label text-[#0077C2] mb-6"
+            className="text-[11px] font-bold tracking-[0.3em] text-[#0077C2] mb-6 uppercase"
           >
             Available for Creative Direction
           </motion.span>
 
-           <motion.h1
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              className="
-                font-serif
-                lowercase.
-                text-[#1b1d0e]
-                leading-[0.82]
-                tracking-normal
-                font-normal
-                text-[4rem]
-                sm:text-[5rem]
-                md:text-[6rem]
-                lg:text-[6.5rem]
-                mb-8
-              "
-            >
-              Blessing <br />
-              <span className="font-serif text-[#1b1d0e]">
-                Nnona
-              </span>
-            </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-9xl font-black leading-[0.9] tracking-tight text-slate-900 mb-8"
+          >
+            Blessing <br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-500">
+             Nnona
+            </span>
+          </motion.h1>
 
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="editorial-body max-w-md mb-10 text-on-surface-variant"
+            className="text-lg text-slate-500 leading-relaxed max-w-md mb-10"
           >
             Digital Architect crafting immersive visual experiences through cinematography.
           </motion.p>
 
-          {/* BRAND ACCURATE SOCIALS */}
+          {/* BRAND ACCURATE SOCIALS (Colors active by default) */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -62,6 +55,7 @@ export default function Hero() {
               {
                 name: "Instagram",
                 href: "https://instagram.com/its___blessing?igsh=MWRlaTlhZHRsanJkdg%3D%3D&utm_source=qr",
+                // Gradient background active by default, text white
                 baseStyle: "bg-gradient-to-tr from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] text-white border-transparent hover:brightness-110",
                 svg: (
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -72,6 +66,7 @@ export default function Hero() {
               {
                 name: "TikTok",
                 href: "https://www.tiktok.com/@itz_udy?_r=1&_t=ZN-96Fpe1V9cMY",
+                // Black background active by default, text white
                 baseStyle: "bg-black text-white border-black hover:bg-slate-900",
                 svg: (
                   <svg className="w-4.5 h-4.5 fill-current" viewBox="0 0 24 24">
@@ -82,6 +77,7 @@ export default function Hero() {
               {
                 name: "YouTube",
                 href: "https://www.youtube.com/@its___blessing?si=IN3Fk2udRm4Nlr39",
+                // Red background active by default, text white
                 baseStyle: "bg-[#FF0000] text-white border-[#FF0000] hover:bg-[#D90000]",
                 svg: (
                   <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
@@ -95,7 +91,7 @@ export default function Hero() {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`w-11 h-11 rounded-full border flex items-center cursor-pointer justify-center transition-all duration-300 shadow-sm hover:-translate-y-1 ${social.baseStyle}`}
+                className={`w-11 h-11 rounded-full border flex items-center custor-pointer justify-center transition-all duration-300 shadow-sm hover:-translate-y-1 ${social.baseStyle}`}
               >
                 {social.svg}
               </a>
@@ -104,18 +100,18 @@ export default function Hero() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="order-1 lg:order-2 col-span-1 lg:col-span-5 flex justify-center items-center relative py-4">
+        <div className="order-2 lg:order-1 col-span-1 lg:col-span-5 flex justify-center items-center relative py-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             animate={{ opacity: 1, scale: 1, rotate: -2 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
             className="relative w-full max-w-[380px] lg:max-w-[420px] aspect-[3/4] group"
           >
-
-            <div className="absolute inset-0 border-2 border-outline-variant rounded-t-[200px] rounded-b-[40px] translate-x-4 translate-y-4 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-700 pointer-events-none z-0" />
+            {/* Outline Arch Frame */}
+            <div className="absolute inset-0 border-2 border-[#0077C2] rounded-t-[200px] rounded-b-[40px] translate-x-4 translate-y-4 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-700 pointer-events-none z-0" />
 
             {/* Arch Image Container */}
-            <div className="relative z-10 w-full h-full rounded-t-[200px] rounded-b-[40px] overflow-hidden shadow-2xl bg-surface-dim border-4 border-white">
+            <div className="relative z-10 w-full h-full rounded-t-[200px] rounded-b-[40px] overflow-hidden shadow-2xl bg-slate-200 border-4 border-white">
               <img
                 src="/image/MyImage.jpeg"
                 alt="Blessing Udoka Nnona"
@@ -133,7 +129,7 @@ export default function Hero() {
         transition={{ repeat: Infinity, duration: 2 }}
         className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block"
       >
-        <div className="w-[1px] h-12 bg-gradient-to-b from-outline to-transparent" />
+        <div className="w-[1px] h-12 bg-gradient-to-b from-slate-400 to-transparent" />
       </motion.div>
     </section>
   );
