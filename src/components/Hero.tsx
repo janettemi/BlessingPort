@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="relative h-auto md:min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 pt-24 pb-12 md:py-10 bg-surface">
+    <section className="relative h-auto md:min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 pt-15 md:py-10 bg-surface">
       <div className="max-w-7xl w-full mx-auto grid grid-cols-12 items-center gap-3 sm:gap-6 lg:gap-8">
         
         {/* LEFT TEXT CONTENT: Spans 7 columns on mobile, text left-aligned */}
