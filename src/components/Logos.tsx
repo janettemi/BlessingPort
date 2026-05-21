@@ -9,7 +9,10 @@ const brands = [
   "/image/kloudy.png",
   "/image/elf.png",
   "/image/firmoo.png",
-  "/image/fs.jpg"
+  "/image/fs.jpg",
+  "/image/MaraAndRiver.jpg",
+  "/image/coach.png",
+  "/image/hamptonbyhilton.png"
 ];
 
 export default function Logos() {

@@ -5,28 +5,31 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
 const videos = [
-  { id: 1, title: "Skincare Campaign", brand: "Eli&Sarlondon", deliverable: "UGC Reel", views: "145K", video: "/video/video1.webm", logo: "/image/Eli&Sarlondon.png" },
-  { id: 2, title: "Skincare Reel", brand: "paul's chouce", deliverable: "Beauty Capsule", views: "82K", video: "/video/video2.webm", logo: "/image/paul's chouce.png" },
-  { id: 3, title: "Watch Campaign", brand: "Kloudy", deliverable: "Product Showcase", views: "210K", video: "/video/video3.webm", logo: "/image/kloudy.png" },
-  { id: 4, title: "Drink Campaign", brand: "Cupp", deliverable: "Aesthetic Storytelling", views: "95K", video: "/video/video4.webm", logo: "/image/cupp.jpg" },
-  { id: 5, title: "Beauty Reel", brand: "paul's chouce.png", deliverable: "Tutorial / GRWM", views: "320K", video: "/video/video9.webm", logo: "/image/paul's chouce.png" },
-  { id: 6, title: "Beauty ", brand: "elf Cosmetics", deliverable: "Beauty & Lifestyle", views: "64K", video: "/video/video.webm", logo: "/image/elf.png" },
-  { id: 7, title: "Fashion glasses Campaign", brand: "firmoo", deliverable: "Glasses & Accessories", views: "115K", video: "/video/Video11.webm", logo: "/image/firmoo.png" },
-  { id: 8, title: "Hair maintenance oils", brand: "FS", deliverable: "Haircare Campaign", views: "78K", video: "/video/video12.webm", logo: "/image/fs.jpg" },
-  { id: 9, title: "Brand Shoot", brand: "Elf", deliverable: "Beauty & Lifestyle", views: "180K", video: "/video/video14.webm", logo: "/image/elf.png" },
-  { id: 10, title: "Shaving Campaign", brand: "Nimbi", deliverable: "Shaving Shot", views: "93K", video: "/video/video10.webm", logo: "/image/nimbi.png" },
-  { id: 11, title: "Hotel Campaign", brand: "Marriott", deliverable: "Hotel shoot", views: "410K", video: "/video/housev.webm", logo: "/logos/marriott.png" },
-  { id: 12, title: "Hotel Campaign", brand: "Airbnb Luxe", deliverable: "House shoots", views: "250K", video: "/video/ShootH.webm", logo: "/logos/airbnb.png" }
+  { id: 1, title: "Skincare Campaign", brand: "Eli&Sarlondon", deliverable: "UGC Reel", views: "145K", video: "/video/video1.webm", logo: "/image/Eli&Sarlondon.png",poster: "/image/Eli&Sar.png" },
+  { id: 2, title: "Skincare Reel", brand: "paul's chouce", deliverable: "Beauty Capsule", views: "82K", video: "/video/video2.webm", logo: "/image/paul's chouce.png",poster: "/image/pacl.png" },
+  { id: 3, title: "Watch Campaign", brand: "Kloudy", deliverable: "Product Showcase", views: "210K", video: "/video/video3.webm", logo: "/image/kloudy.png" ,poster: "/image/image5.jpeg"},
+  { id: 4, title: "Hotel Campaign", brand: "Hilton by Hilton", deliverable: "House shoots", views: "250K", video:"/video/ShootH.webm", logo:"/image/hamptonbyhilton.png" ,poster:"/image/Hilton.png"},
+  { id: 5, title: "Clothing Campaign", brand: "River and mara", deliverable: "Styling", views: "410K", video:"/video/Rriver.mp4", logo:"/image/MaraAndRiver.jpg" ,poster:"/image/riverimage.png"},
+  { id: 6, title: "Beauty ", brand: "elf Cosmetics", deliverable: "Beauty & Lifestyle", views: "64K", video: "/video/video.webm", logo: "/image/elf.png" ,poster: "/image/BrandShoot.jpeg"},
+  { id: 7, title: "Fashion glasses Campaign", brand: "firmoo", deliverable: "Glasses & Accessories", views: "115K", video: "/video/Video11.webm", logo: "/image/firmoo.png",poster: "/image/femo.png" },
+  { id: 8, title: "Hair maintenance oils", brand: "FS", deliverable: "Haircare Campaign", views: "78K", video: "/video/video12.webm", logo: "/image/fs.jpg",poster: "/image/fsimg.png" },
+  { id: 9, title: "Brand Shoot", brand: "Elf", deliverable: "Beauty & Lifestyle", views: "180K", video: "/video/video14.webm", logo: "/image/elf.png" ,poster: "/image/BrandShoot.jpeg"},
+  { id: 10, title: "Shaving Campaign", brand: "Nimbi", deliverable: "Shaving Shot", views: "93K", video: "/video/video10.webm", logo: "/image/nimbi.png" ,poster: "/image/nimbi.jpeg"},
+  { id: 11, title: "Hotel Campaign", brand: "Hampton by Hilton", deliverable: "Hotel shoot", views: "410K", video: "/video/housev.webm", logo: "/image/hamptonbyhilton.png" ,poster: "/image/Hampton.png"},
+  { id: 13, title: "Jewelry Campaign", brand: "Coach", deliverable: "Jewelry Showcase", views: "320K", video:"/video/Coach.webm", logo:"/image/coach.png" ,poster:"/image/coachimg.png"},
+  { id: 14, title: "Clothing Campaign", brand: "River and mara", deliverable: "Unboxing style", views: "150K", video:"/video/Mara.webm", logo:"/image/MaraAndRiver.jpg" ,poster:"/image/maraimg.png"},
+  { id: 15, title: "Beauty Reel", brand: "paul's chouce.png", deliverable: "Tutorial / GRWM", views: "320K", video: "/video/video9.webm", logo: "/image/paul's chouce.png" ,poster: "/image/image3.jpeg"},
+    { id: 16, title: "Drink Campaign", brand: "Cupp", deliverable: "Aesthetic Storytelling", views: "95K", video: "/video/video4.webm", logo: "/image/cupp.jpg",poster: "/image/cupps.png" },
 ];
 
 const images = [
-  { id: 1, title: "Skin care", brand: "Youth To The People", image: "/image/image2.jpeg" },
-  { id: 2, title: "Skin care", brand: "Summer Fridays", image: "/image/image3.jpeg" },
-  { id: 3, title: "Beauty Editorial ", brand: "Vogue", image: "/image/image4.jpeg" },
-  { id: 4, title: "Risk watch campaign", brand: "Seiko", image: "/image/image5.jpeg" },
-  { id: 5, title: "Shaving campaign", brand: "Athena Club", image: "/image/nimbi.jpeg" },
-  { id: 6, title: "Beauty campaign", brand: "Kith Women", image: "/image/BrandShoot.jpeg" },
-  { id: 7, title: "Beauty campaign", brand: "Dior Beauty", image: "/image/Beuty.jpeg" }
+  { id: 1, title: "Skin care", brand: "Zooki", image: "/image/image2.jpeg" },
+  { id: 2, title: "Skin care", brand: "paul's choice", image: "/image/image3.jpeg" },
+  { id: 3, title: "Beauty Editorial ", brand: "paul's choice", image: "/image/image4.jpeg" },
+  { id: 4, title: "Risk watch campaign", brand: "Kloudy", image: "/image/image5.jpeg" },
+  { id: 5, title: "Shaving campaign", brand: "Nimbi", image: "/image/nimbi.jpeg" },
+  { id: 6, title: "Beauty campaign", brand: "Elf", image: "/image/BrandShoot.jpeg" },
+  { id: 7, title: "Beauty campaign", brand: "medlcube", image: "/image/Beuty.jpeg" }
 ];
 
 const standaloneYoutube = {
@@ -91,6 +94,7 @@ export default function Portfolio() {
                 <div className="relative w-full h-full">
                   <video
                     src={item.video}
+                    poster={item.poster}
                     muted
                     className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
                   />
@@ -224,6 +228,7 @@ export default function Portfolio() {
             >
               <video
                 src={activeVideo.video}
+                poster={activeVideo.poster}
                 controls
                 autoPlay
                 className="w-full h-full object-contain"
