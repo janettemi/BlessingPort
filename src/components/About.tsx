@@ -13,7 +13,7 @@ export default function About() {
             viewport={{ once: true }}
             className="md:col-span-5"
           >
-            <h2 className="text-3xl md:text-4xl text-primary mb-8 leading-tight">
+            <h2 className="text-2xl md:text-4xl text-primary mb-8 leading-tight">
               Crafting narratives that resonate in the digital age.
             </h2>
             <div className="flex flex-wrap gap-4 mb-8">
