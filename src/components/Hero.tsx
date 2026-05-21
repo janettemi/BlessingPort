@@ -21,7 +21,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-3xl min-[380px]:text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-slate-900 leading-none mb-3 sm:mb-8"
+            className="text-2xl min-[380px]:text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-light tracking-tight text-slate-900 leading-none mb-3 sm:mb-8"
           >
             Blessing <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-500">
@@ -33,7 +33,7 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="text-[15px] min-[380px]:text-xs sm:text-lg text-slate-500 leading-relaxed max-w-xs md:max-w-md mb-4 sm:mb-10"
+            className="text-[10px] min-[380px]:text-xs sm:text-lg text-slate-500 leading-relaxed max-w-xs md:max-w-md mb-4 sm:mb-10"
           >
             Digital Architect crafting immersive visual experiences through cinematography.
           </motion.p>
