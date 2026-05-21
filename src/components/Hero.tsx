@@ -18,29 +18,29 @@ export default function Hero() {
             Available for Creative Direction
           </motion.span>
 
-          <motion.h1
-  initial={{ opacity: 0, y: 30 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ duration: 0.8, delay: 0.4 }}
-  className="
-    font-serif
-    uppercase
-    text-on-surface
-    leading-[0.85]
-    tracking-[0.04em]
-    font-normal
-    text-[4rem]
-    sm:text-[5rem]
-    md:text-[6rem]
-    lg:text-[7rem]
-    mb-8
-  "
->
-  Blessing <br />
-  <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-900 to-slate-500 font-serif">
-   Nnona
-  </span>
-</motion.h1>
+           <motion.h1
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+              className="
+                font-serif
+                lowercase.
+                text-[#1b1d0e]
+                leading-[0.82]
+                tracking-normal
+                font-normal
+                text-[4rem]
+                sm:text-[5rem]
+                md:text-[6rem]
+                lg:text-[6.5rem]
+                mb-8
+              "
+            >
+              Blessing <br />
+              <span className="font-serif text-[#1b1d0e]">
+                Nnona
+              </span>
+            </motion.h1>
 
           <motion.p
             initial={{ opacity: 0 }}

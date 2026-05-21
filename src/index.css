@@ -1,4 +1,4 @@
-/* TAN PEARL FONT */
+/* TAN PEARL FONT SETUP */
 @font-face {
   font-family: "TanPearl";
   src: url("/fonts/TAN-PEARL-Regular.ttf") format("truetype");
@@ -6,8 +6,7 @@
   font-style: normal;
 }
 
-/* GOOGLE FONT */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
 
 @import "tailwindcss";
 
