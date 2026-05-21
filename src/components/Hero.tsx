@@ -1,19 +1,19 @@
+
+
 import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    /* Changed min-h-screen to h-auto on mobile to let height scale naturally, preserving min-h-screen for desktop */
-    <section className="relative h-auto md:min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 pt-16 pb-6 md:py-10">
+    <section className="relative h-auto md:min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 pt-24 pb-12 md:py-10 bg-surface">
       <div className="max-w-7xl w-full mx-auto grid grid-cols-12 items-center gap-4 sm:gap-6 lg:gap-8">
-        
         <div className="col-span-7 lg:col-span-7 flex flex-col items-start text-left z-20">
           <motion.span
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="editorial-label mb-3 sm:mb-6"
+            className="text-[9px] sm:text-[11px] font-bold tracking-[0.3em] mb-3 sm:mb-6 uppercase"
           >
-            Visual Director & Cinematic Storyteller
+            Available for Creative Direction
           </motion.span>
 
           <motion.h1
@@ -32,10 +32,11 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="editorial-body max-w-md mb-6 sm:mb-10"
+            className="text-xs sm:text-lg text-slate-500 leading-relaxed max-w-md mb-6 sm:mb-10"
           >
-            Crafting distinct visual narratives and timeless moving images. A blend of classic elegance and modern digital artistry.
+            Digital Architect crafting immersive visual experiences through cinematography.
           </motion.p>
+
           {/* BRAND ACCURATE SOCIALS */}
           <motion.div
             initial={{ opacity: 0 }}
@@ -87,21 +88,18 @@ export default function Hero() {
             ))}
           </motion.div>
         </div>
-
-        {/* RIGHT IMAGE */}
         <div className="col-span-5 lg:col-span-5 flex justify-center items-center relative py-4">
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             animate={{ opacity: 1, scale: 1, rotate: -2 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-
-            className="relative w-full max-w-[140px] sm:max-w-[380px] lg:max-w-[420px] aspect-[3/4] group"
+             className="relative w-full max-w-[380px] lg:max-w-[420px] aspect-[3/4] group"
           >
-            {/* Outline Arch Frame */}
-            <div className="absolute inset-0 border border-[#0077C2] sm:border-2 rounded-t-[50px] sm:rounded-t-[200px] rounded-b-[15px] sm:rounded-b-[40px] translate-x-1.5 translate-y-1.5 sm:translate-x-4 sm:translate-y-4 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-700 pointer-events-none z-0" />
+            {/* Outline Arch Frame — adjusted border offset on mobile (translate-x-2) */}
+            <div className="absolute inset-0 border border-[#0077C2] sm:border-2 rounded-t-[100px] sm:rounded-t-[200px] rounded-b-[20px] sm:rounded-b-[40px] translate-x-2 translate-y-2 sm:translate-x-4 sm:translate-y-4 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform duration-700 pointer-events-none z-0" />
 
             {/* Arch Image Container */}
-            <div className="relative z-10 w-full h-full rounded-t-[50px] sm:rounded-t-[200px] rounded-b-[15px] sm:rounded-b-[40px] overflow-hidden shadow-2xl bg-slate-200 border border-white sm:border-4">
+            <div className="relative z-10 w-full h-full rounded-t-[100px] sm:rounded-t-[200px] rounded-b-[20px] sm:rounded-b-[40px] overflow-hidden shadow-2xl bg-slate-200 border-2 sm:border-4 border-white">
               <img
                 src="/image/MyImage.jpeg"
                 alt="Blessing Udoka Nnona"
