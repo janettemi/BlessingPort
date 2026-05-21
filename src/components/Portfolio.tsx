@@ -45,7 +45,7 @@ const videos = [
   { 
     id: 5, 
     title: "Beauty Reel", 
-    brand: "paul's chouce", 
+    brand: "paul's chouce.png", 
     deliverable: "Tutorial / GRWM", 
     views: "320K", 
     video: "/video/video9.webm",

@@ -38,7 +38,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-xs uppercase tracking-widest text-on-surface-variant/60 mb-1">Drop an email</p>
-                  <span className="text-xl font-bold text-primary/90 tracking-wide break-all">hello@blessingnnona.com</span>
+                  <span className="text-xl font-bold text-primary/90 tracking-wide break-all">Blessing9604@gmail.com</span>
                 </div>
               </motion.a>
             </div>
