@@ -9,7 +9,7 @@ const videos = [
   { id: 2, title: "Skincare Reel", brand: "paul's chouce", deliverable: "Beauty Capsule", views: "82K", video: "/video/video2.webm", logo: "/image/paul's chouce.png",poster: "/image/pacl.png" },
   { id: 3, title: "Watch Campaign", brand: "Kloudy", deliverable: "Product Showcase", views: "210K", video: "/video/video3.webm", logo: "/image/kloudy.png" ,poster: "/image/image5.jpeg"},
   { id: 4, title: "Hotel Campaign", brand: "Hilton by Hilton", deliverable: "House shoots", views: "250K", video:"/video/ShootH.webm", logo:"/image/hamptonbyhilton.png" ,poster:"/image/Hilton.png"},
-  { id: 5, title: "Clothing Campaign", brand: "River and mara", deliverable: "Styling", views: "410K", video:"/video/Rriver.mp4", logo:"/image/MaraAndRiver.jpg" ,poster:"/image/riverimage.png"},
+  { id: 5, title: "Clothing Campaign", brand: "River and mara", deliverable: "Styling", views: "410K", video:"/video/Rriver.webm", logo:"/image/MaraAndRiver.jpg" ,poster:"/image/riverimage.png"},
   { id: 6, title: "Beauty ", brand: "elf Cosmetics", deliverable: "Beauty & Lifestyle", views: "64K", video: "/video/video.webm", logo: "/image/elf.png" ,poster: "/image/BrandShoot.jpeg"},
   { id: 7, title: "Fashion glasses Campaign", brand: "firmoo", deliverable: "Glasses & Accessories", views: "115K", video: "/video/Video11.webm", logo: "/image/firmoo.png",poster: "/image/femo.png" },
   { id: 8, title: "Hair maintenance oils", brand: "FS", deliverable: "Haircare Campaign", views: "78K", video: "/video/video12.webm", logo: "/image/fs.jpg",poster: "/image/fsimg.png" },
