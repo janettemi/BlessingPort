@@ -1,12 +1,4 @@
-/* TAN PEARL FONT SETUP */
-/* @font-face {
-  font-family: "TanPearl";
-  src: url("/fonts/TAN-PEARL-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=UnifrakturMaguntia&family=Cinzel+Decorative:wght@400;700&display=swap');
 @import "tailwindcss";
 
 
@@ -32,7 +24,9 @@
 
 
   /* TYPOGRAPHY */
-  --font-serif: "Cormorant Garamond", serif;
+  /* Swapped to Blackletter/Fancy serif alternatives */
+  --font-fancy: "UnifrakturMaguntia", serif;
+  --font-editorial: "Cinzel Decorative", serif;
   --font-sans: "Montserrat", sans-serif;
 
   /* ANIMATION */
@@ -64,11 +58,12 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-serif);
-    font-weight: 300;
-    text-transform: none; /* Looks stunning in mixed-case instead of strict uppercase */
-    line-height: 0.95;
-    letter-spacing: 0.02em;
+    /* Headings use the dramatic decorative style */
+    font-family: var(--font-editorial);
+    font-weight: 400;
+    text-transform: none; 
+    line-height: 1.1;
+    letter-spacing: 0.05em;
   }
 
   p {
@@ -93,11 +88,12 @@
 
   /* HERO TITLE */
   .editorial-title {
-    font-family: var(--font-serif);
-    font-size: clamp(2rem, 8vw, 6rem);
-    line-height: 0.85;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    /* Using the exact Gothic/Blackletter style for the big impact moments */
+    font-family: var(--font-fancy);
+    font-size: clamp(2.5rem, 9vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    text-transform: none;
     font-weight: 400;
   }
 

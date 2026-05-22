@@ -86,10 +86,10 @@ export default function Portfolio() {
                 <div className="absolute top-0.5 min-[400px]:top-1 sm:top-2 left-1/2 -translate-x-1/2 w-8 min-[400px]:w-12 sm:w-24 h-1.5 min-[400px]:h-2 sm:h-5 bg-on-surface/95 rounded-full z-30" />
 
                 {/* METRIC BADGE — reduced sizing layout on micro screens */}
-                <div className="absolute top-1.5 right-1.5 min-[400px]:top-3 min-[400px]:right-3 sm:top-4 sm:right-4 z-30 bg-black/40 backdrop-blur-md px-1 py-0.5 min-[400px]:px-2.5 min-[400px]:py-1 sm:px-3 sm:py-1 rounded-full flex items-center gap-0.5 sm:gap-1.5 border border-white/10">
+                {/* <div className="absolute top-1.5 right-1.5 min-[400px]:top-3 min-[400px]:right-3 sm:top-4 sm:right-4 z-30 bg-black/40 backdrop-blur-md px-1 py-0.5 min-[400px]:px-2.5 min-[400px]:py-1 sm:px-3 sm:py-1 rounded-full flex items-center gap-0.5 sm:gap-1.5 border border-white/10">
                   <Eye className="text-white w-2 h-2 min-[400px]:w-3 min-[400px]:h-3 sm:w-3.5 sm:h-3.5" />
                   <span className="text-[6px] min-[400px]:text-[9px] sm:text-[10px] font-bold text-white tracking-wider">{item.views}</span>
-                </div>
+                </div> */}
 
                 <div className="relative w-full h-full">
                   <video

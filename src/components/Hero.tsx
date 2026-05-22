@@ -95,7 +95,6 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             animate={{ opacity: 1, scale: 1, rotate: -2 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-           
             className="relative w-full max-w-[145px] min-[380px]:max-w-[170px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[420px] aspect-[3/4] group"
           >
             
