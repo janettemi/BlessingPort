@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=UnifrakturMaguntia&family=Cinzel+Decorative:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=UnifrakturMaguntia&family=Cinzel+Decorative:wght@400;700&display=swap');
 @import "tailwindcss";
-
+ */
 
 /* THEME */
 @theme {
@@ -46,19 +46,18 @@
 /* BASE */
 @layer base {
 
-  body {
+  /* body {
     @apply bg-surface text-on-surface antialiased;
 
     font-family: var(--font-sans);
     font-weight: 300;
     letter-spacing: 0.02em;
-  }
+  } */
 
-  h1,
+  /* h1,
   h2,
   h3,
   h4 {
-    /* Headings use the dramatic decorative style */
     font-family: var(--font-editorial);
     font-weight: 400;
     text-transform: none; 
@@ -80,25 +79,23 @@
 
   * {
     box-sizing: border-box;
-  }
+  } */
 }
 
 /* COMPONENTS */
 @layer components {
 
   /* HERO TITLE */
-  .editorial-title {
-    /* Using the exact Gothic/Blackletter style for the big impact moments */
+  /* .editorial-title {
     font-family: var(--font-fancy);
     font-size: clamp(2.5rem, 9vw, 7rem);
     line-height: 0.9;
     letter-spacing: 0.02em;
     text-transform: none;
     font-weight: 400;
-  }
+  } */
 
-  /* LABEL TEXT */
-  .editorial-label {
+  /* .editorial-label {
     font-family: var(--font-sans);
     font-size: 10px;
     letter-spacing: 0.45em;
@@ -107,7 +104,7 @@
     color: var(--color-on-surface-variant);
   }
 
-  /* BODY TEXT */
+
   .editorial-body {
     font-family: var(--font-sans);
     font-size: 15px;
@@ -115,10 +112,9 @@
     letter-spacing: 0.02em;
     font-weight: 300;
     color: var(--color-on-surface-variant);
-  }
+  } */
 
-  /* SOCIAL ICONS */
-  .social-icon {
+  /* .social-icon {
     @apply w-10 h-10 rounded-full flex items-center justify-center transition-all duration-300;
 
     border: 1px solid var(--color-outline-variant);
@@ -131,19 +127,17 @@
     background: var(--color-on-surface);
     color: white;
     transform: translateY(-3px);
-  }
+  } */
 
-  /* IMAGE STYLE */
-  .editorial-image {
+  /* .editorial-image {
     border-radius: 220px 220px 24px 24px;
     overflow: hidden;
     background: #ece8df;
   }
 
-  /* GLASS PANEL */
   .glass-panel {
     @apply bg-white/60 backdrop-blur-xl border border-white/20 shadow-xl;
-  }
+  } */
 
   /* SOFT SHADOW */
   .dreamy-shadow {
