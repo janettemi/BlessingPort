@@ -85,11 +85,11 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             animate={{ opacity: 1, scale: 1, rotate: -2 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="relative w-full max-w-[165px] min-[380px]:max-w-[200px] sm:max-w-[390px] md:max-w-[440px] lg:max-w-[490px] aspect-[3/4] group"
+            className="relative w-full max-w-[165px] min-[380px]:max-w-[200px] 
+            sm:max-w-[390px] md:max-w-[440px] lg:max-w-[490px] aspect-[3/4] group"
           >
-
             {/* Arch Image Container - This keeps the rounded top and frame tilt */}
-            <div className="relative z-10 w-full h-full rounded-t-[40px] min-[380px]:rounded-t-[55px] sm:rounded-t-[200px] rounded-b-[10px] min-[380px]:rounded-b-[15px] sm:rounded-b-[40px] overflow-hidden shadow-xl bg-slate-200 border border-white sm:border-4">
+            <div className="w-full h-full rounded-t-[150px] overflow-hidden shadow-lg border border-white/20 bg-surface-container/30">
               
               {/* FIXED: The rotate-2 utility keeps the photo straight while group-hover handles zoom scale layout */}
               <img
