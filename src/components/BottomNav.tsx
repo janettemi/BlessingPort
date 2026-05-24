@@ -8,7 +8,7 @@ export default function BottomNav() {
   const tabs = [
     { id: 'home', icon: Home, href: '#' },
     { id: 'reels', icon: Play, href: '#work' },
-    { id: 'favorites', icon: Heart, href: '#' },
+    { id: 'favorites', icon: Heart, href: '#about' },
     { id: 'profile', icon: User, href: '#contact' },
   ];
 
@@ -33,7 +33,7 @@ export default function BottomNav() {
               whileTap={{ scale: 0.95 }}
               className={`p-4 rounded-full transition-all duration-300 relative ${
                 isActive 
-                  ? 'bg-secondary-container text-secondary' 
+                  ? 'bg-tertiary-container text-tertiary' 
                   : 'text-on-surface-variant hover:text-primary'
               }`}
             >
@@ -41,7 +41,7 @@ export default function BottomNav() {
               {isActive && (
                 <motion.div 
                   layoutId="bubble"
-                  className="absolute inset-0 bg-secondary-container rounded-full -z-10"
+                  className="absolute inset-0 bg-tertiary-container rounded-full -z-10"
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}

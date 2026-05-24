@@ -3,20 +3,10 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section className="relative h-auto md:min-h-screen flex items-center justify-center overflow-hidden px-4 sm:px-6 pt-15 md:py-10 bg-surface">
-      <div className="max-w-7xl w-full mx-auto grid grid-cols-12 items-center gap-3 sm:gap-6 lg:gap-8">
+      <div className="max-w-7xl w-full mx-auto grid grid-cols-12 items-center gap-4 sm:gap-6 lg:gap-8">
         
-        {/* LEFT TEXT CONTENT: Spans 7 columns on mobile, text left-aligned */}
-        <div className="col-span-7 flex flex-col items-start text-left z-20 w-full">
-          <motion.span
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.2 }}
-           
-            className="text-[7px] min-[380px]:text-[9px] sm:text-[11px] font-bold tracking-[0.2em] sm:tracking-[0.3em] mb-2 sm:mb-6 uppercase block w-full"
-          >
-            Available for Creative Direction
-          </motion.span>
-
+        {/* LEFT TEXT CONTENT: Adjusted column span to 6 to make room for a larger image block */}
+        <div className="col-span-6 flex flex-col items-start text-left z-20 w-full">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -33,9 +23,9 @@ export default function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
-            className="text-[10px] min-[380px]:text-xs sm:text-lg text-slate-500 leading-relaxed max-w-xs md:max-w-md mb-4 sm:mb-10"
+            className="text-[6px] min-[380px]:text-xs sm:text-lg text-slate-500 leading-relaxed max-w-xs md:max-w-md mb-4 sm:mb-10"
           >
-            Digital Architect crafting immersive visual experiences through cinematography.
+            UGC CREATOR | BEAUTY CREATOR | LIFESTYLE | FASHION CREATOR
           </motion.p>
 
           {/* BRAND ACCURATE SOCIALS */}
@@ -90,23 +80,24 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        <div className="col-span-5 flex justify-center items-center relative py-2">
+        <div className="col-span-6 flex justify-center items-center relative py-2 w-full">
           <motion.div
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             animate={{ opacity: 1, scale: 1, rotate: -2 }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="relative w-full max-w-[145px] min-[380px]:max-w-[170px] sm:max-w-[340px] md:max-w-[380px] lg:max-w-[420px] aspect-[3/4] group"
+            className="relative w-full max-w-[165px] min-[380px]:max-w-[200px] sm:max-w-[390px] md:max-w-[440px] lg:max-w-[490px] aspect-[3/4] group"
           >
-            
-            <div className="absolute inset-0 border border-[#0077C2] sm:border-2 rounded-t-[40px] min-[380px]:rounded-t-[55px] sm:rounded-t-[200px] rounded-b-[10px] min-[380px]:rounded-b-[15px] sm:rounded-b-[40px] translate-x-1 translate-y-1 sm:translate-x-4 sm:translate-y-4 group-hover:translate-x-0.5 group-hover:translate-y-0.5 transition-transform duration-700 pointer-events-none z-0" />
 
-            {/* Arch Image Container */}
+            {/* Arch Image Container - This keeps the rounded top and frame tilt */}
             <div className="relative z-10 w-full h-full rounded-t-[40px] min-[380px]:rounded-t-[55px] sm:rounded-t-[200px] rounded-b-[10px] min-[380px]:rounded-b-[15px] sm:rounded-b-[40px] overflow-hidden shadow-xl bg-slate-200 border border-white sm:border-4">
+              
+              {/* FIXED: The rotate-2 utility keeps the photo straight while group-hover handles zoom scale layout */}
               <img
                 src="/image/MyImage.jpeg"
                 alt="Blessing Udoka Nnona"
-                className="w-full h-full object-cover group-hover:scale-105 transition duration-1000"
+                className="w-full h-full object-cover rotate-2 group-hover:scale-105 transition duration-1000"
               />
+              
             </div>
           </motion.div>
         </div>

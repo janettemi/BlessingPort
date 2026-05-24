@@ -19,7 +19,8 @@ const videos = [
   { id: 13, title: "Jewelry Campaign", brand: "Coach", deliverable: "Jewelry Showcase", views: "320K", video:"/video/Coach.webm", logo:"/image/coach.png" ,poster:"/image/coachimg.png"},
   { id: 14, title: "Clothing Campaign", brand: "River and mara", deliverable: "Unboxing style", views: "150K", video:"/video/Mara.webm", logo:"/image/MaraAndRiver.jpg" ,poster:"/image/maraimg.png"},
   { id: 15, title: "Beauty Reel", brand: "paul's chouce.png", deliverable: "Tutorial / GRWM", views: "320K", video: "/video/video9.webm", logo: "/image/paul's chouce.png" ,poster: "/image/image3.jpeg"},
-    { id: 16, title: "Drink Campaign", brand: "Cupp", deliverable: "Aesthetic Storytelling", views: "95K", video: "/video/video4.webm", logo: "/image/cupp.jpg",poster: "/image/cupps.png" },
+  { id: 16, title: "Drink Campaign", brand: "Cupp", deliverable: "Aesthetic Storytelling", views: "95K", video: "/video/video4.webm", logo: "/image/cupp.jpg",poster: "/image/cupps.png" },
+  { id: 17, title: "Nail Campaign", brand: "Kiss", deliverable: "Brand Campaign", views: "95K", video: "/video/kiss.mp4", logo: "/image/kiss.jpeg",poster: "/image/kiss.png" },
 ];
 
 const images = [
@@ -29,7 +30,8 @@ const images = [
   { id: 4, title: "Risk watch campaign", brand: "Kloudy", image: "/image/image5.jpeg" },
   { id: 5, title: "Shaving campaign", brand: "Nimbi", image: "/image/nimbi.jpeg" },
   { id: 6, title: "Beauty campaign", brand: "Elf", image: "/image/BrandShoot.jpeg" },
-  { id: 7, title: "Beauty campaign", brand: "medlcube", image: "/image/Beuty.jpeg" }
+  { id: 7, title: "Beauty campaign", brand: "medlcube", image: "/image/Beuty.jpeg" },
+  {id:6, title:"Nile campaign", band:"Kiss ", image:"/image/KissGland.jpeg"}
 ];
 
 const standaloneYoutube = {

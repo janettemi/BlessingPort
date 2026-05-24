@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Instagram, Youtube, Twitter } from 'lucide-react';
+import { Instagram, Youtube} from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -26,7 +26,7 @@ export default function Footer() {
       <div className="flex flex-col items-center gap-4">
         <p className="text-sm text-on-surface-variant font-medium">© 2024 Blessing Nnona</p>
         <div className="flex gap-6">
-          {[Instagram, Youtube, Twitter].map((Icon, i) => (
+          {[Instagram, Youtube, ].map((Icon, i) => (
             <motion.a 
               key={i}
               whileHover={{ scale: 1.2, rotate: 10 }}

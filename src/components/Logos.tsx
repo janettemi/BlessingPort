@@ -12,7 +12,8 @@ const brands = [
   "/image/fs.jpg",
   "/image/MaraAndRiver.jpg",
   "/image/coach.png",
-  "/image/hamptonbyhilton.png"
+  "/image/hamptonbyhilton.png",
+  "/image/kiss.jpeg"
 ];
 
 export default function Logos() {
